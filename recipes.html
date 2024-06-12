@@ -500,6 +500,23 @@
             <p>&copy; 2024 Recipe Finder. All rights reserved.</p>
         </div>
     </footer>
+            <script>
+            function filterRecipes() {
+                var searchInput = document.querySelector('.home-search input').value.toLowerCase();
+                var recipeCards = document.querySelectorAll('.recipe-card');
+                recipeCards.forEach(function (card) {
+                    var title = card.querySelector('.recipe-info h3').innerText.toLowerCase();
+                    if (title.includes(searchInput)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            document.querySelector('.home-search button').addEventListener('click', filterRecipes);
+            document.querySelector('.home-search input').addEventListener('input', filterRecipes);
+</script>
 </body>
 
 </html>
