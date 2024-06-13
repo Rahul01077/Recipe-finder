@@ -1,11 +1,9 @@
-/* Reset CSS */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Body styles */
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
@@ -39,7 +37,7 @@ li {
 /* Anchor styles */
 a {
     text-decoration: none;
-    color: #337ab7;
+    color: #0ae25d;
 }
 
 a:hover {
@@ -47,7 +45,7 @@ a:hover {
 }
 
 header {
-    background-color: #6ba292;
+    background-color: #0cdd21;
     color: white;
     padding: 20px 0;
     display: flex;
@@ -81,7 +79,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(243, 7, 164);
     text-decoration: none;
     font-size: 20px;
 }
@@ -102,7 +100,7 @@ nav ul li a.active {
 
 .home-search button {
     padding: 10px 20px;
-    background-color: #1db954;
+    background-color: #ea0fbe;
     color: white;
     border: none;
     cursor: pointer;
